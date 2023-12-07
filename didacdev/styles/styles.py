@@ -9,9 +9,9 @@ MAX_WIDTH = "1000px"
 
 class Size(Enum):
     ZERO = "0px !important"
-    SMALL = "0.5em"
-    MEDIUM = "0.8em"
-    DEFAULT = "1em"
+    SMALL = "0.5em !important"
+    MEDIUM = "0.8em !important"
+    DEFAULT = "1em !important"
     BIG = "2em"
     BUTTON = "2.75em"
     VERY_BIG = "4em"
@@ -26,4 +26,17 @@ BASE_STYLE = {
     "font_family": Font.DEFAULT.value,
     "color": TextColor.PRIMARY.value,
     "background": Color.PRIMARY.value,
+    rx.Heading: {
+            "color": TextColor.ACCENT.value,
+            "font_family": Font.DEFAULT.value,
+            "text_align": "center"
+        },
 }
+
+max_width_style = dict(
+    align_items="start",
+    padding_x=Size.BIG.value,
+    width="100%",
+    max_width=MAX_WIDTH,
+)
+

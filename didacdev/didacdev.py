@@ -1,13 +1,24 @@
 import reflex as rx
 
 import didacdev.styles.styles as styles
+from didacdev.components.github import github
+from didacdev.styles.styles import Size
+from didacdev.views.header import header
+from didacdev.views.navbar import navbar
 
 
 def index() -> rx.Component:
     return rx.box(
-        rx.text(
-            "Hola Mundo"
-        )
+        navbar(),
+        rx.center(
+            rx.vstack(
+                header(),
+                github(),
+                width="100%",
+                spacing=Size.VERY_BIG.value,
+            ),
+        ),
+
     )
 
 
