@@ -5,6 +5,8 @@ from didacdev.components.github import github
 from didacdev.styles.styles import Size
 from didacdev.views.header import header
 from didacdev.views.navbar import navbar
+from didacdev.views.studies import studies
+from didacdev.views.work import work
 
 
 def index() -> rx.Component:
@@ -13,6 +15,8 @@ def index() -> rx.Component:
         rx.center(
             rx.vstack(
                 header(),
+                work(),
+                studies(),
                 github(),
                 width="100%",
                 spacing=Size.VERY_BIG.value,

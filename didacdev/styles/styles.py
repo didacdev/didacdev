@@ -30,12 +30,22 @@ BASE_STYLE = {
             "color": TextColor.ACCENT.value,
             "font_family": Font.DEFAULT.value,
             "text_align": "center"
-        },
+    },
+    rx.Link: {
+        "text_decoration": "none",
+        "_hover": {
+            "text_decoration": "none",
+            "color": f"{TextColor.ACCENT.value} !important",
+        }
+    },
+    rx.Span: {
+        "font_size": Size.MEDIUM.value,
+    },
 }
 
 max_width_style = dict(
     align_items="start",
-    padding_x=Size.BIG.value,
+    padding=Size.BIG.value,
     width="100%",
     max_width=MAX_WIDTH,
 )
