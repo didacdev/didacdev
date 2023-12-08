@@ -1,6 +1,6 @@
 GITHUB_URL = "https://github.com/didacdev"
 LINKEDIN_URL = "https://www.linkedin.com/in/diego-sanchez-escribano/"
-GITHUB_REPO_URL = ""
+GITHUB_REPO_URL = "https://github.com/didacdev/didacdev"
 UAM_URL = "https://uam.es/CentroEstudiosPosgrado/MU_Formacion_Profesorado_Educacion_Secundaria_Bachillerato/1446794562391.htm?language=es_ES&nDept=5&pid=1446755975574&pidDept=1446823902965"
 RCSMM_URL = "https://rcsmm.eu"
 CSKG_URL = "https://katarinagurska.com/curso-of/interpretacion/interpretacion-itinerario-a/"
