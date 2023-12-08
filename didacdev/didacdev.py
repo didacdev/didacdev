@@ -12,6 +12,7 @@ from didacdev.views.achivements import achivements
 
 def index() -> rx.Component:
     return rx.box(
+        rx.script("document.documentElement.lang='es'"),
         navbar(),
         rx.center(
             rx.vstack(
