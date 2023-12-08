@@ -16,12 +16,12 @@ def navbar() -> rx.Component:
                 padding="2px",
                 border="2px",
                 border_color=Color.SECONDARY.value,
-                margin_right=Size.DEFAULT.value,
             ),
             rx.text("DidacDev"),
             rx.spacer(),
             link("github", const.GITHUB_URL),
             link("linkedin", const.LINKEDIN_URL),
+            link("gmail", f"mailto:{const.MAIL}"),
             width="100%"
         ),
         bg=Color.PRIMARY.value,

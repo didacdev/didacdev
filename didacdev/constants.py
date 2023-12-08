@@ -7,3 +7,6 @@ CSKG_URL = "https://katarinagurska.com/curso-of/interpretacion/interpretacion-it
 UNED_URL = "http://portal.uned.es/portal/page?_pageid=93,71802397&_dad=portal&_schema=PORTAL"
 MBL_URL = "https://www.musicboxlearning.com"
 TEMPO_URL = "https://www.tempomusical.es"
+NUTRICYNN_URL = "https://www.nutricynn.com"
+C1_URL = "https://www.cambridgeenglish.org/es/exams-and-tests/advanced/"
+MAIL = "diego.sanchez.escribano@pm.me"
