@@ -21,7 +21,12 @@ def navbar() -> rx.Component:
             rx.spacer(),
             link("github", const.GITHUB_URL),
             link("linkedin", const.LINKEDIN_URL),
-            link("gmail", f"mailto:{const.MAIL}"),
+            rx.tablet_and_desktop(
+                link(
+                    "gmail",
+                    f"mailto:{const.MAIL}"
+                )
+            ),
             width="100%"
         ),
         bg=Color.PRIMARY.value,

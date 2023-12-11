@@ -4,10 +4,10 @@ import didacdev.styles.styles as styles
 from didacdev.components.github import github
 from didacdev.styles.styles import Size
 from didacdev.views.header import header
-from didacdev.views.navbar import navbar
 from didacdev.views.studies import studies
 from didacdev.views.work import work
 from didacdev.views.achivements import achivements
+from didacdev.views.navbar import navbar
 
 
 def index() -> rx.Component:

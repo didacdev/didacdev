@@ -1,8 +1,9 @@
 *.db
 *.py[cod]
+*.zip
 .idea
 .web
 __pycache__/
-venv
-*.zip
 public
+venv
+.venv
