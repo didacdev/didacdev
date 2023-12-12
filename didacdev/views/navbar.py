@@ -20,7 +20,11 @@ def navbar() -> rx.Component:
             rx.text("DidacDev"),
             rx.spacer(),
             link("github", const.GITHUB_URL),
-            link("linkedin", const.LINKEDIN_URL),
+            link("whatsapp", const.WHATSAPP_API),
+
+            rx.tablet_and_desktop(
+                link("linkedin", const.LINKEDIN_URL),
+            ),
             rx.tablet_and_desktop(
                 link(
                     "gmail",

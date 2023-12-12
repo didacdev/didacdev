@@ -20,6 +20,7 @@ def badge(title: str, name: str, image: str) -> rx.Component:
                 class_name=f"is-{name}"
             ),
             class_name="nes-badge",
+            max_width="75%"
         ),
         align_items="center",
     )
