@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3.11+-yellow?style=for-the-badge&logo=python&logoColor=white&labelColor=101010)](https://python.org)
 [![Reflex](https://img.shields.io/badge/Reflex-0.3.6+-5646ED?style=for-the-badge&logo=python&logoColor=white&labelColor=101010)](https://reflex.dev)
 [![NES.css](https://img.shields.io/badge/NES.css-2.3.0-007bff?style=for-the-badge&logo=css3&logoColor=white&labelColor=101010)](https://nostalgic-css.github.io/NES.css)
-[![Render](https://img.shields.io/badge/Render-static?style=for-the-badge&logo=render&labelColor=blue](https://img.shields.io/badge/Render-static-gray?style=for-the-badge&logo=render&logoColor=white&labelColor=101010&color=green)](https://render.com)
+[![Render](https://img.shields.io/badge/Render-static-gray?style=for-the-badge&logo=render&logoColor=white&labelColor=101010&color=green)](https://render.com)
 
 ### Visita [https://didacdev.com](https://didacdev.com)
 
