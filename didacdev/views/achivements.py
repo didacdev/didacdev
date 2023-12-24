@@ -10,7 +10,7 @@ def achivements() -> rx.Component:
         rx.vstack(
             rx.responsive_grid(
                 badge("Python", "success", "languages/python.png", const.PYTHON_PROJECTS),
-                badge("Django", "success", "languages/django.png", const.PYTHON_PROJECTS),
+                badge("Django", "success", "languages/django.png", const.DJANGO_PROJECTS),
                 badge("Swift", "primary", "languages/swift.png", const.SWIFT_PROJECTS),
                 badge("SwiftUI", "primary", "languages/swiftUI.png", const.SWIFT_PROJECTS),
                 badge("Reflex", "warning", "languages/reflex.png", const.PYTHON_PROJECTS),
