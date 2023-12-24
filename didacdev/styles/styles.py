@@ -7,6 +7,7 @@ from .fonts import Font
 
 MAX_WIDTH = "1000px"
 
+
 class Size(Enum):
     ZERO = "0px !important"
     SMALL = "0.5em !important"
@@ -27,9 +28,9 @@ BASE_STYLE = {
     "color": TextColor.PRIMARY.value,
     "background": Color.PRIMARY.value,
     rx.Heading: {
-            "color": TextColor.ACCENT.value,
-            "font_family": Font.DEFAULT.value,
-            "text_align": "center"
+        "color": TextColor.ACCENT.value,
+        "font_family": Font.DEFAULT.value,
+        "text_align": "center"
     },
     rx.Link: {
         "text_decoration": "none",
@@ -49,4 +50,3 @@ max_width_style = dict(
     width="100%",
     max_width=MAX_WIDTH,
 )
-

@@ -17,7 +17,6 @@ def index() -> rx.Component:
         rx.center(
             rx.vstack(
                 header(),
-                work(),
                 achivements(),
                 studies(),
                 github(),

@@ -1,23 +1,19 @@
 import reflex as rx
 
-from didacdev.styles.styles import Size, max_width_style, Color
 from didacdev.components.badge import badge
-from didacdev.components.header_text import header_text
+from didacdev.styles.styles import Size, max_width_style, Color
+import didacdev.constants as const
 
 
 def achivements() -> rx.Component:
     return rx.vstack(
         rx.vstack(
             rx.responsive_grid(
-                badge("Python", "success", "languages/python.png"),
-                badge("Django", "success", "languages/django.png"),
-                badge("Swift", "primary", "languages/swift.png"),
-                badge("SwiftUI", "primary", "languages/swiftUI.png"),
-                badge("HTML", "warning", "languages/html.png"),
-                badge("CSS", "warning", "languages/css.png"),
-                badge("Java", "warning", "languages/java.png"),
-                badge("SQL", "warning", "languages/sql.png"),
-                badge("Reflex", "warning", "languages/reflex.png"),
+                badge("Python", "success", "languages/python.png", const.PYTHON_PROJECTS),
+                badge("Django", "success", "languages/django.png", const.PYTHON_PROJECTS),
+                badge("Swift", "primary", "languages/swift.png", const.SWIFT_PROJECTS),
+                badge("SwiftUI", "primary", "languages/swiftUI.png", const.SWIFT_PROJECTS),
+                badge("Reflex", "warning", "languages/reflex.png", const.PYTHON_PROJECTS),
                 columns=[2, 2, 2, 3, 3],
                 width="100%",
                 spacing=Size.DEFAULT.value,
