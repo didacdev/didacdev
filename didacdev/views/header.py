@@ -1,51 +1,60 @@
 import reflex as rx
-
-from didacdev.styles.styles import Size, max_width_style
+from didacdev.styles.styles import TextColor, Color, Size, max_width_style
 
 
 def header() -> rx.Component:
-    progress = __progress(60)
-
-    return rx.flex(
-        rx.image(
-            src="didacdev.png",
-            atl="Imagen de DidacDev.",
-            width="22em",
-        ),
-        rx.vstack(
-            rx.heading(
-                "Diego Sánchez Escribano",
-                size="lg",
-                padding_bottom=Size.DEFAULT.value,
-            ),
+    return rx.vstack(
+        rx.hstack(
             rx.box(
-                rx.text(
-                    "Computer Engineer",
-                    class_name="title",
+                rx.text("Hola 👋"),
+                rx.box(
+                    "Mi nombre es ",
+                    rx.span(
+                        "Diego Sánchez",
+                        background_image=f"linear-gradient(to right, {Color.BLUE.value}, " +
+                        f"{Color.GREEN.value})",
+                        background_clip="text",
+                        color="transparent",
+                    ),
                 ),
-                rx.text(
-                    f"{progress}%",
-                    font_size=Size.MEDIUM.value,
-                    text_align="center",
-                ),
-                rx.progress(
-                    value=progress,
-                    width="100%",
-                    height=Size.DEFAULT.value,
-                    margin_bottom=Size.MEDIUM.value
-                ),
-                padding_y=Size.MEDIUM.value,
-                class_name="nes-container is-rounded is-dark with-title",
+                rx.text("Soy desarrollador mobile iOS"),
+                font_weight="bold",
+                font_size=Size.BIG.value,
+                color=TextColor.SECONDARY.value,
+                width="45%",
             ),
-            margin=Size.ZERO.value,
-            class_name="nes-balloon from-left is-dark",
+            rx.avatar(
+                src="didacdev.png",
+                width="13em",
+                height="13em",
+                box_sizing="border-box",
+                border="4px solid transparent",
+                background_clip="padding-box, border-box",
+                background_origin="padding-box, border-box",
+                background_image=f"linear-gradient({Color.BACKGROUND.value}, " +
+                f"{Color.BACKGROUND.value}), linear-gradient({Color.BLUE.value}, " +
+                f"{Color.GREEN.value})",
+            ),
+            width="100%",
+            justify_content="space-between",
+            align_items="start",
         ),
-        padding_top=Size.VERY_BIG.value,
+        rx.box(
+            rx.text(
+                "diego.sanchez.escribano@pm.me",
+                font_size=Size.DEFAULT.value,
+                font_weight="bold",
+            ),
+            padding=Size.SMALL.value,
+            margin_top=Size.BIG.value,
+            box_sizing="border-box",
+            border="2px solid transparent",
+            border_radius="6px",
+            background_clip="padding-box, border-box",
+            background_origin="padding-box, border-box",
+            background_image=f"linear-gradient({Color.BACKGROUND.value}, " +
+            f"{Color.BACKGROUND.value}), linear-gradient({Color.BLUE.value}, " +
+            f"{Color.GREEN.value})",
+        ),
         style=max_width_style,
-        flex_direction=["column-reverse", "column-reverse", "column-reverse", "row", "row"],
-
     )
-
-
-def __progress(credits: int):
-    return credits / 120 * 100

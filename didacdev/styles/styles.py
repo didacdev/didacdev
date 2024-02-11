@@ -5,43 +5,39 @@ import reflex as rx
 from .colors import TextColor, Color
 from .fonts import Font
 
-MAX_WIDTH = "1000px"
+MAX_WIDTH = "850px"
 
 
 class Size(Enum):
     ZERO = "0px !important"
     SMALL = "0.5em !important"
-    MEDIUM = "0.8em !important"
     DEFAULT = "1em !important"
+    MEDIUM = "1.5em !important"
     BIG = "2em !important"
-    BUTTON = "2.75em !important"
     VERY_BIG = "4em !important"
 
 
 STYLESHEETS = [
-    "https://unpkg.com/nes.css@latest/css/nes.min.css",
-    "https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    "https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap"
 ]
 
 BASE_STYLE = {
     "font_family": Font.DEFAULT.value,
     "color": TextColor.PRIMARY.value,
-    "background": Color.PRIMARY.value,
+    "background": Color.BACKGROUND.value,
     rx.Heading: {
-        "color": TextColor.ACCENT.value,
+        "color": TextColor.SECONDARY.value,
         "font_family": Font.DEFAULT.value,
-        "text_align": "center"
+        "text_align": "center",
+        "size": "xl",
     },
     rx.Link: {
         "text_decoration": "none",
         "_hover": {
             "text_decoration": "none",
-            "color": f"{TextColor.ACCENT.value} !important",
+            "color": f"{TextColor.SECONDARY.value} !important",
         }
-    },
-    rx.Span: {
-        "font_size": Size.MEDIUM.value,
-    },
+    }
 }
 
 max_width_style = dict(

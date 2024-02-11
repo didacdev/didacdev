@@ -2,14 +2,11 @@ from enum import Enum
 
 
 class Color(Enum):
-    ACCENT = "#92cc41"
-    PRIMARY = "#212529"
-    SECONDARY = "#D3D3D3"
+    BACKGROUND = "#191919"
+    BLUE = "#4D5BCE"
+    GREEN = "#43D9AD"
 
 
 class TextColor(Enum):
-    ACCENT = "#92cc41"
-    PRIMARY = "#FFFFFF"
-    SECONDARY = "#212529"
-    TERTIARY = "#D3D3D3"
-
+    PRIMARY = "#A7A7A7"
+    SECONDARY = "#D9D9D9"
