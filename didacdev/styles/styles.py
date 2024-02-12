@@ -41,8 +41,13 @@ BASE_STYLE = {
 }
 
 max_width_style = dict(
-    align_items="start",
     padding=Size.BIG.value,
     width="100%",
     max_width=MAX_WIDTH,
+)
+
+title_style = dict(
+    font_weight="bold",
+    font_size=Size.BIG.value,
+    color=TextColor.SECONDARY.value,
 )

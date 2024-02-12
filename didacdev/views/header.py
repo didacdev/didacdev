@@ -1,5 +1,6 @@
 import reflex as rx
-from didacdev.styles.styles import TextColor, Color, Size, max_width_style
+from didacdev.styles.styles import Color, Size, max_width_style, title_style
+import didacdev.constants as const
 
 
 def header() -> rx.Component:
@@ -18,9 +19,7 @@ def header() -> rx.Component:
                     ),
                 ),
                 rx.text("Soy desarrollador mobile iOS"),
-                font_weight="bold",
-                font_size=Size.BIG.value,
-                color=TextColor.SECONDARY.value,
+                style=title_style,
                 width="45%",
             ),
             rx.avatar(
@@ -41,12 +40,11 @@ def header() -> rx.Component:
         ),
         rx.box(
             rx.text(
-                "diego.sanchez.escribano@pm.me",
+                const.MAIL,
                 font_size=Size.DEFAULT.value,
                 font_weight="bold",
             ),
             padding=Size.SMALL.value,
-            margin_top=Size.BIG.value,
             box_sizing="border-box",
             border="2px solid transparent",
             border_radius="6px",
@@ -56,5 +54,7 @@ def header() -> rx.Component:
             f"{Color.BACKGROUND.value}), linear-gradient({Color.BLUE.value}, " +
             f"{Color.GREEN.value})",
         ),
+        margin_top=Size.BIG.value,
+        align_items="start",
         style=max_width_style,
     )
