@@ -24,4 +24,5 @@ def about() -> rx.Component:
             ),
             width="100%",
         ),
+        min_height="100vh"
     )

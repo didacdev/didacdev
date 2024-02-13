@@ -10,7 +10,8 @@ MAX_WIDTH = "850px"
 
 class Size(Enum):
     ZERO = "0px !important"
-    SMALL = "0.5em !important"
+    XSMALL = "0.5em !important"
+    SMALL = "0.8em !important"
     DEFAULT = "1em !important"
     MEDIUM = "1.5em !important"
     BIG = "2em !important"

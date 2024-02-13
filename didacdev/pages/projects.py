@@ -3,6 +3,8 @@ import reflex as rx
 import didacdev.utils as utils
 from didacdev.styles.styles import Size
 from didacdev.views.navbar import navbar
+from didacdev.views.projects_header import projects_header
+from didacdev.views.all_projects import all_projects
 from didacdev.views.footer import footer
 
 
@@ -17,11 +19,13 @@ def projects() -> rx.Component:
         navbar(),
         rx.center(
             rx.vstack(
-                rx.heading("Proyectos"),
+                projects_header(),
+                all_projects(),
                 footer(),
                 width="100%",
-                spacing=Size.VERY_BIG.value,
+                spacing=Size.DEFAULT.value,
             ),
             width="100%",
         ),
+        min_height="100vh"
     )
