@@ -3,9 +3,9 @@ import reflex as rx
 import didacdev.utils as utils
 from didacdev.styles.styles import Size
 from didacdev.views.navbar import navbar
-from didacdev.views.header import header
-from didacdev.views.stack import stack
-from didacdev.views.projects import projects
+from didacdev.views.index.header import header
+from didacdev.views.index.stack import stack
+from didacdev.views.index.projects import projects
 from didacdev.views.footer import footer
 
 

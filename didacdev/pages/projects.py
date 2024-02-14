@@ -3,8 +3,8 @@ import reflex as rx
 import didacdev.utils as utils
 from didacdev.styles.styles import Size
 from didacdev.views.navbar import navbar
-from didacdev.views.projects_header import projects_header
-from didacdev.views.all_projects import all_projects
+from didacdev.views.projects.projects_header import projects_header
+from didacdev.views.projects.all_projects import all_projects
 from didacdev.views.footer import footer
 
 

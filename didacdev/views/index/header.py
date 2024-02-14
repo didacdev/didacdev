@@ -23,7 +23,7 @@ def header() -> rx.Component:
                 width="45%",
             ),
             rx.avatar(
-                src="didacdev.png",
+                src="didacdev.jpg",
                 width="13em",
                 height="13em",
                 box_sizing="border-box",

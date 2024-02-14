@@ -3,6 +3,10 @@ import reflex as rx
 import didacdev.utils as utils
 from didacdev.styles.styles import Size
 from didacdev.views.navbar import navbar
+from didacdev.views.about.about_header import about_header
+from didacdev.views.about.job import job
+from didacdev.views.about.studies import studies
+from didacdev.views.about.languages import languages
 from didacdev.views.footer import footer
 
 
@@ -17,7 +21,10 @@ def about() -> rx.Component:
         navbar(),
         rx.center(
             rx.vstack(
-                rx.heading("Didacdev"),
+                about_header(),
+                job(),
+                studies(),
+                languages(),
                 footer(),
                 width="100%",
                 spacing=Size.VERY_BIG.value,
