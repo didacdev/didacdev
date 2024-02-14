@@ -13,6 +13,7 @@ def about_header() -> rx.Component:
         rx.text(
             "Sobre mí",
             style=title_style,
+            text_align="start",
         ),
         rx.box(
             f"Me llamo Diego, tengo {age(
@@ -40,6 +41,7 @@ def about_header() -> rx.Component:
             "y web. Tengo gran interés en la visión artificial y la parte de la robótica aplicada a la visión espacial.",
             font_size=Size.DEFAULT.value,
         ),
+        align_items="start",
         spacing=Size.BIG.value,
         style=max_width_style
     )

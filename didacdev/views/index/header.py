@@ -5,38 +5,69 @@ import didacdev.constants as const
 
 def header() -> rx.Component:
     return rx.vstack(
-        rx.hstack(
-            rx.box(
-                rx.text("Hola 👋"),
+        rx.tablet_and_desktop(
+            rx.hstack(
                 rx.box(
-                    "Mi nombre es ",
-                    rx.span(
-                        "Diego Sánchez",
-                        background_image=f"linear-gradient(to right, {Color.BLUE.value}, " +
-                        f"{Color.GREEN.value})",
-                        background_clip="text",
-                        color="transparent",
+                    rx.text("Hola 👋"),
+                    rx.box(
+                        "Mi nombre es ",
+                        rx.span(
+                            "Diego Sánchez",
+                            background_image=f"linear-gradient(to right, {Color.BLUE.value}, " +
+                            f"{Color.GREEN.value})",
+                            background_clip="text",
+                            color="transparent",
+                        ),
                     ),
+                    rx.text("Soy desarrollador mobile iOS"),
+                    rx.mobile_only(
+
+                        width="100% !important",
+                    ),
+                    width="45%",
+                    style=title_style,
                 ),
-                rx.text("Soy desarrollador mobile iOS"),
-                style=title_style,
-                width="45%",
+                rx.avatar(
+                    src="didacdev.jpg",
+                    width="13em",
+                    height="13em",
+                    box_sizing="border-box",
+                    border="4px solid transparent",
+                    background_clip="padding-box, border-box",
+                    background_origin="padding-box, border-box",
+                    background_image=f"linear-gradient({Color.BACKGROUND.value}, " +
+                    f"{Color.BACKGROUND.value}), linear-gradient({Color.BLUE.value}, " +
+                    f"{Color.GREEN.value})",
+                ),
+                width="100%",
+                justify_content="space-between",
+                align_items="start",
             ),
-            rx.avatar(
-                src="didacdev.jpg",
-                width="13em",
-                height="13em",
-                box_sizing="border-box",
-                border="4px solid transparent",
-                background_clip="padding-box, border-box",
-                background_origin="padding-box, border-box",
-                background_image=f"linear-gradient({Color.BACKGROUND.value}, " +
-                f"{Color.BACKGROUND.value}), linear-gradient({Color.BLUE.value}, " +
-                f"{Color.GREEN.value})",
+        ),
+        rx.mobile_only(
+            rx.box(
+                rx.box(
+                    rx.text("Hola 👋"),
+                    rx.box(
+                        "Mi nombre es ",
+                        rx.span(
+                            "Diego Sánchez",
+                            background_image=f"linear-gradient(to right, {Color.BLUE.value}, " +
+                            f"{Color.GREEN.value})",
+                            background_clip="text",
+                            color="transparent",
+                        ),
+                    ),
+                    rx.text("Soy desarrollador mobile iOS"),
+                    rx.mobile_only(
+
+                        width="100% !important",
+                    ),
+                    style=title_style,
+                ),
+                width="100%",
+                align_items="start",
             ),
-            width="100%",
-            justify_content="space-between",
-            align_items="start",
         ),
         rx.box(
             rx.text(

@@ -22,5 +22,5 @@ def language(title: str, date: str) -> rx.Component:
         spacing=Size.DEFAULT.value,
         border_bottom=f"1px inset {TextColor.PRIMARY.value}",
         padding_y=Size.XSMALL.value,
-        width="30em"
+        width=["100%", "100%", "100%", "30em", "30em"]
     )

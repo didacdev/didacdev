@@ -54,7 +54,6 @@ def main_projects(header: str, link: str, github_link: str, body: str, stack: st
                 width="100%",
             ),
             padding=Size.MEDIUM.value,
-            height="17em",
             justify_content="space-between"
         ),
         border_radius="10px",

@@ -10,7 +10,8 @@ def about_item(title: str, place: str, local: str, date: str) -> rx.Component:
         rx.heading(
             title,
             size="md",
-            color=TextColor.PRIMARY.value
+            color=TextColor.PRIMARY.value,
+            text_align="start"
         ),
         rx.hstack(
             rx.text(place),
@@ -24,5 +25,5 @@ def about_item(title: str, place: str, local: str, date: str) -> rx.Component:
         spacing=Size.DEFAULT.value,
         border_bottom=f"1px inset {TextColor.PRIMARY.value}",
         padding_y=Size.XSMALL.value,
-        width="30em"
+        width=["100%", "100%", "100%", "30em", "30em"]
     )

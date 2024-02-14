@@ -9,10 +9,19 @@ def footer() -> rx.Component:
     return rx.vstack(
         rx.hstack(
             rx.link(
-                rx.image(
-                    src="/dark_logo.png",
-                    width="7em",
+                rx.tablet_and_desktop(
+                    rx.image(
+                        src="/dark_logo.png",
+                        width="7em",
+                    ),
                 ),
+                rx.mobile_only(
+                    rx.image(
+                        src="/dark_logo.png",
+                        width="4em",
+                    ),
+                ),
+
                 href=const.WEB_GITHUB_URL,
                 is_external=True
             ),
