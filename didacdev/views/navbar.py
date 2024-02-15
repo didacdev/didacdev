@@ -24,13 +24,6 @@ def navbar() -> rx.Component:
                 social_link("linkedin", const.LINKEDIN_URL),
                 width="100%"
             ),
-            bg=Color.BACKGROUND.value,
-            position="sticky",
-            padding_x=Size.BIG.value,
-            padding_y=Size.DEFAULT.value,
-            z_index="999",
-            top="0",
-            width="100%"
         ),
         rx.mobile_only(
             rx.hstack(
@@ -63,12 +56,13 @@ def navbar() -> rx.Component:
                 ),
                 width="100%"
             ),
-            bg=Color.BACKGROUND.value,
-            position="sticky",
-            padding_x=Size.DEFAULT.value,
-            padding_y=Size.DEFAULT.value,
-            z_index="999",
-            top="0",
-            width="100%"
+
         ),
+        bg=Color.BACKGROUND.value,
+        position="sticky",
+        padding_x=Size.DEFAULT.value,
+        padding_y=Size.DEFAULT.value,
+        z_index="999",
+        top="0",
+        width="100%"
     )
