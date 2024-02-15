@@ -7,7 +7,7 @@ Aplicación de la Enciclopedia de Star Wars desarrollada en Swift utilizando Swi
 """
 CONNECT_FOUR_GITHUB_URL = "https://github.com/didacdev/Connect-Four"
 CONNECT_FOUR_TEXT = """
-Juego "Conecta Cuatro" para jugar en un solo dispositivo, donde los dos jgadores tendrán que turnarse para colocar las fichas en un tablero 7x6. El primer jugador que consiga poner cuatro fichas en una columna gana.
+Juego "Conecta Cuatro" para jugar en un solo dispositivo, donde los dos jugadores tendrán que turnarse para colocar las fichas en un tablero 7x6. El primer jugador que consiga poner cuatro fichas en una columna gana.
 """
 WEB_GITHUB_URL = "https://github.com/didacdev/didacdev_web"
 UAM_URL = "https://uam.es/CentroEstudiosPosgrado/MU_Formacion_Profesorado_Educacion_Secundaria_Bachillerato/1446794562391.htm?language=es_ES&nDept=5&pid=1446755975574&pidDept=1446823902965"

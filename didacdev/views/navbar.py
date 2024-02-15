@@ -37,7 +37,7 @@ def navbar() -> rx.Component:
                 social_link("linkedin", const.LINKEDIN_URL),
                 rx.spacer(),
                 rx.menu(
-                    rx.menu_button("Menu"),
+                    rx.menu_button("Menú"),
                     rx.menu_list(
                         rx.menu_item(
                             page_link("_home", "/"),
