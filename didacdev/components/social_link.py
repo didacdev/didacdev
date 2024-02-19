@@ -8,6 +8,7 @@ def social_link(icon: str, link: str) -> rx.Component:
         rx.image(
             src=f"/icons/{icon}.svg",
             width=Size.MEDIUM.value,
+            alt=f"Icono de {icon}"
         ),
         href=link,
         is_external=True,

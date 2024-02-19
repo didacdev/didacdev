@@ -1,6 +1,5 @@
 import reflex as rx
 
-import didacdev.constants as const
 from didacdev.styles.styles import Size, Color
 
 
@@ -9,7 +8,8 @@ def general_project(header: str, link: str, github_link: str, body: str, stack: 
         rx.image(
             src=front,
             border_radius="10px 10px 0 0",
-            width="100%"
+            width="100%",
+            alt=f"Imagen del proyecto {header}"
         ),
         rx.vstack(
             rx.heading(

@@ -1,8 +1,6 @@
 import reflex as rx
 
-import didacdev.constants as const
-from didacdev.styles.styles import Size, TextColor, title_style, max_width_style
-from datetime import datetime
+from didacdev.styles.styles import Size, TextColor
 
 
 def about_item(title: str, place: str, local: str, date: str) -> rx.Component:

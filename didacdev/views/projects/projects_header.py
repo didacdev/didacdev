@@ -1,7 +1,6 @@
 import reflex as rx
 
-import didacdev.constants as const
-from didacdev.styles.styles import Size, Color, title_style
+from didacdev.styles.styles import Size, title_style
 
 
 def projects_header() -> rx.Component:

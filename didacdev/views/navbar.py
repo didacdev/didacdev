@@ -13,6 +13,7 @@ def navbar() -> rx.Component:
                 rx.image(
                     src="/logo.png",
                     width="8em",
+                    alt="Logotipo de Didacdev. Una \"de\" creada con signos de código."
                 ),
                 rx.spacer(),
                 page_link("_home", "/"),
@@ -30,6 +31,7 @@ def navbar() -> rx.Component:
                 rx.image(
                     src="/logo.png",
                     width="5em",
+                    alt="Logotipo de Didacdev. Una \"de\" creada con signos de código."
                 ),
                 rx.spacer(),
                 social_link("cv", "/cv.pdf"),

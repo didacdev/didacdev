@@ -1,8 +1,7 @@
 import reflex as rx
 
 import didacdev.constants as const
-from didacdev.styles.styles import Size, Color, max_width_style, title_style
-from didacdev.components.social_link import social_link
+from didacdev.styles.styles import Size, max_width_style, title_style
 from didacdev.components.main_project import main_projects
 
 

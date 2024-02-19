@@ -13,12 +13,14 @@ def footer() -> rx.Component:
                     rx.image(
                         src="/dark_logo.png",
                         width="7em",
+                        alt="Logotipo de Didacdev. Una \"de\" creada con signos de código."
                     ),
                 ),
                 rx.mobile_only(
                     rx.image(
                         src="/dark_logo.png",
                         width="4em",
+                        alt="Logotipo de Didacdev. Una \"de\" creada con signos de código."
                     ),
                 ),
 
